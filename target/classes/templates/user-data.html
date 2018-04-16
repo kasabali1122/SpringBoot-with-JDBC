@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://thymeleaf.org">
+<table border = "1">
+	<tr>
+		<th>Name</th>
+		<th>Email</th>
+	</tr>
+	
+	<tr th:each="prod : ${user}">
+
+        <td th:text="${prod.name}">2</td>
+        <td th:text="${prod.email}">3</td>
+     </tr>
+</table>
+</html>
